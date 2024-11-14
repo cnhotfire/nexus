@@ -85,7 +85,8 @@ function start_node() {
     fi
 
     # 确保目录存在
-    mkdir -p /root/.nexus  # 创建目录（如果不存在）
+    # mkdir -p /root/.nexus  # 创建目录（如果不存在）
+    # 新版本会自动创建.nexus目录，重复会导致程序在运行 但是无法写入prover-id
 
     # 更新系统并安装必要的软件包
     echo "更新系统并安装必要的软件包..."
